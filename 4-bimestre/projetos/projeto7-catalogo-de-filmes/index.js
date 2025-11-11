@@ -54,7 +54,7 @@ const filme9 = {
      genero: "Animação/Aventura/Comédia",
      ano: 2013,
      avaliacao: 7.9
-};
+}
 const filme10 = {
      titulo: "Os Sem-Floresta",
      genero: "Animação/Comédia",
@@ -62,13 +62,12 @@ const filme10 = {
      avaliacao: 6.9
 }
 
-const filmes = [filme1, filme2, filme3, filme4, filme5, filme6, filme7, filme8, filme9, filme10];
+const filmes = [filme1, filme2, filme3, filme4, filme5, filme6, filme7, filme8, filme9, filme10]
 
 console.log("=== Catálogo de Filmes ===")
-filmes.forEach((filme, index) => {
-     console.log(`${index + 1}. ${filme.titulo} - ${filme.genero}`)
-})
-
+for (let i = 0; i < filmes.length; i++) {
+     console.log(`${i + 1}. ${filmes[i].titulo} - ${filmes[i].genero}`)
+   }
 
 let melhorFilme = filmes[0]
 for (let i = 1; i < filmes.length; i++) {
@@ -76,7 +75,6 @@ for (let i = 1; i < filmes.length; i++) {
           melhorFilme = filmes[i]
      }
 }
-
 // === Calcular média das avaliações ===
 let somaAvaliativa = 0
 for (let i = 0; i < filmes.length; i++) {
@@ -85,7 +83,7 @@ for (let i = 0; i < filmes.length; i++) {
 const media = somaAvaliativa / filmes.length
 
 // === Exibir resultados finais ===
-console.log("\nFilme mais bem avaliado:");
+console.log("\nFilme mais bem avaliado:")
 console.log(`${melhorFilme.titulo} (${melhorFilme.avaliacao}/10)`)
 
 console.log(`\nMédia geral das avaliações: ${media.toFixed(2)}`)
