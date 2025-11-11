@@ -75,7 +75,7 @@ for (let i = 1; i < filmes.length; i++) {
           melhorFilme = filmes[i]
      }
 }
-// === Calcular média das avaliações ===
+
 let somaAvaliativa = 0
 for (let i = 0; i < filmes.length; i++) {
      somaAvaliativa += filmes[i].avaliacao
@@ -85,8 +85,6 @@ const media = somaAvaliativa / filmes.length
 // === Exibir resultados finais ===
 console.log("\nFilme mais bem avaliado:")
 console.log(`${melhorFilme.titulo} (${melhorFilme.avaliacao}/10)`)
-
 console.log(`\nMédia geral das avaliações: ${media.toFixed(2)}`)
-
 // === NÃO MODIFIQUE OU ADICIONE NADA ABAIXO ============
 module.exports = { filme1, filme2, filme3, filme4, filme5, filme6, filme7, filme8, filme9, filme10 }
