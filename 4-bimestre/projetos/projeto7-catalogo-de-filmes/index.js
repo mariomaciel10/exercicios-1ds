@@ -1,6 +1,8 @@
 // CRIE UMA LÓGICA ABAIXO
 // === Catálogo de Filmes ===
 
+const prompt = require("prompt-sync")() 
+
 const filme1 = {
      titulo: "Shrek",
      genero: "Animação/Comédia/Fantasia",
